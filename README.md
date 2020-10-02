@@ -1,6 +1,6 @@
 # Unifev
 
-Este teste é parte do processo de seleção da Unifev para a vaga de Analista Programador, de acordo com o [Edital N°XXX - CONTRATAÇÃO DE ANALISTA DE SISTEMAS](https://www.unifev.edu.br/edital/contratacao/00000000#editais).
+Este teste é parte do processo de seleção da Unifev para a vaga de Analista Programador, de acordo com o [Edital N°07 - CONTRATAÇÃO DE ANALISTA DE SISTEMAS](https://www.unifev.edu.br/edital/contratacao/15995#editais).
 
 [Conheça a Unifev](https://unifev.edu.br)
 
@@ -42,7 +42,7 @@ O projeto deverá conter:
 
 Antes de iniciar, tenha em mente que você deverá seguir todos os requisitos citados aqui.
 
-1. Faça a sua inscrição no processo seletivo através do link [Edital N°XXX - CONTRATAÇÃO DE ANALISTA DE SISTEMAS](https://www.unifev.edu.br/edital/contratacao/00000000#editais).
+1. Faça a sua inscrição no processo seletivo através do link [Edital N°07 - CONTRATAÇÃO DE ANALISTA DE SISTEMAS](https://www.unifev.edu.br/edital/contratacao/15995#editais).
 2. Dê um *fork* neste repositório.
 3. Clone o *fork* na sua máquina.
 4. Escreva seu programa utilizando estritamente todos os requisitos listados pelo teste. É muito importante você ter em mente que avaliaremos seus *commits* no *Git*, então, não esqueça de realizar um *commit* a cada vitória conquistada!
