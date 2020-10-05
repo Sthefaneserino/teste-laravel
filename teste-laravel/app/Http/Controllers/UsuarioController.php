@@ -24,7 +24,6 @@ class UsuarioController extends Controller
 
     public function login(Request $request)
     {
-        // $usuario = User::class;
         $usuario = DB::table('users')->where('email', [$request->email])->first();
         if (Hash::check($request->password, $usuario->password)) {
             $credentials = $request->only('email', 'password');
@@ -55,5 +54,10 @@ class UsuarioController extends Controller
             DB::rollBack();
             throw $th;
         }
+    }
+
+    public function logout(){
+        Auth::logout();
+        return view('index');
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UsuarioController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,5 @@ Route::post('/registrar', [UsuarioController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/area-restrita', function () {
     return view('index');
 })->name('area-restrita');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/logout',  [UsuarioController::class, 'logout']);
