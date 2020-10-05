@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UsuarioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/professores', function () {
+    return view('professores-lista');
+});
+
+Route::get('/login', [UsuarioController::class, 'index']);
+
+Route::post('/logar', [UsuarioController::class, 'login']);
+
+Route::get('/cadastro', [UsuarioController::class, 'cadastro']);
+
+Route::post('/registrar', [UsuarioController::class, 'store']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/area-restrita', function () {
+    return view('index');
+})->name('area-restrita');
